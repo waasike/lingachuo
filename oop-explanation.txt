@@ -1,0 +1,22 @@
+    HERE IS A MORE DETAILED EXPLANATION OF THE OOP CONCEPTS USED IN goods-checkout.php file
+
+1. Abstraction:
+Abstraction is the process of simplifying complex systems by breaking them down into smaller, more manageable parts. 
+In my code, an abstract class named 'AbstractGoodsCheckout' is created. This abstract class serves as a blueprint for classes that will handle goods checkout functionality. 
+The abstract class defines a common method signature 'insertCheckoutData', without providing its implementation. This allows different concrete classes to implement this method 
+in their own specific ways, while ensuring that they all adhere to a common interface. Abstraction helps to hide the internal details and complexities of the implementation from the outside world.
+
+2. Inheritance:
+Inheritance is a OOP concept that allows a class (subclass or child class) to inherit properties and behaviors (methods) from another class (superclass or parent class). 
+In my code, a concrete class named 'GoodsCheckout' is created, which extends the abstract class 'AbstractGoodsCheckout'. By doing so, 'GoodsCheckout' inherits the 'insertCheckoutData' method signature from the abstract class. 
+This means that the 'GoodsCheckout' class must provide a concrete implementation for the abstract method, fulfilling the contract established by the abstract class.
+
+3. Encapsulation:
+Encapsulation is the bundling of data and the methods that operate on that data within a single unit, known as a class. This allows data to be hidden and protected from outside interference, and can only be accessed and modified through the methods of the class. 
+In my code, the database connection '$conn' is encapsulated within the 'GoodsCheckout' class. It is declared as a protected property, meaning it can only be accessed by the class itself and its subclasses. This helps ensure that the database connection is not directly exposed and can be safely managed by the class methods.
+
+4. Polymorphism:
+Polymorphism allows objects of different classes to be treated as objects of a common superclass, enabling them to be used interchangeably. In my code, polymorphism is achieved through the 'insertCheckoutData' method. 
+Since this method is declared in the abstract class 'AbstractGoodsCheckout', it can be used to refer to objects of both the abstract class and its concrete subclass 'GoodsCheckout'. 
+This means that the same method name can be used to handle checkout data for different types of goods, but the actual implementation may vary depending on the specific subclass.
+

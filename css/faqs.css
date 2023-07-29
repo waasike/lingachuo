@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css?family=Rubik&display=swap');
+
+body{
+   background: #f6f6f6;
+}
+
+.box{
+   width: 550px;
+   margin: 100px auto;
+   background: #fff;
+   border-radius: 7px;
+   box-shadow: 1px 2px 4px rgba(0,0,0,.3);
+}
+
+.box .heading{
+   background: hsl(189, 40%, 44%);
+   height: 30px;
+   border-radius: 7px 7px 0px 0px;
+   padding: 20px;
+   color: #fff;
+   text-align: center;
+   font-family: "Rubik";
+   font-size: 1.5rem;
+}
+
+.faqs{
+   padding: 0px 20px 20px;
+}
+
+::-webkit-details-marker{
+   float: right;
+   margin-top: 3px;
+}
+
+details{
+   background: #f6f6f6;
+   padding: 10px 20px;
+   border-radius: 7px;
+   margin-top: 20px;
+   font-family: "Rubik";
+   font-size: 1.1rem;
+   letter-spacing: 1px;
+   cursor: pointer;
+}
+
+details summary{
+   outline: none;
+}
+
+.text{
+    color: rgb(128, 124, 124);
+}
+
+
+h1 {
+    font-family: 'Playfair Display',
+        serif;
+    font-size: 59px;
+    color: black;
+    font-weight: 600;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.questions {
+    color: #d2d2d2;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+p,
+input,
+textarea,
+label {
+    font-family: 'Poppins',
+        sans-serif;
+}
+
+.container {
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 5%;
+    
+}
+
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: left;
+    padding: 20px 0;
+}
+
+input,
+textarea,
+label {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    color: #828282;
+}
+
+input,
+textarea {
+    background-color: transparent;
+    border: 0;
+    border: 2px solid #828282;
+}
+
+input[type=submit] {
+    background-color: #d3b45e;
+    padding: 15px 0;
+    color: white;
+    font-size: 18px;
+    border-bottom: none;
+    margin-top: 30px;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+input[type=submit]:hover {
+    background: #b89128;
+    color: #1b1c1e;
+}
+
+input,
+textarea {
+    color: rgb(69, 59, 94);
+    font-size: 18px;
+    padding: 10px;
+}
+
+input:focus,
+textarea:focus {
+    outline: 1px solid #828282;
+}
+
+a {
+    color: #828282;
+    font-style: italic;
+}
+
+a:hover {
+    color: #fff;
+}
+
